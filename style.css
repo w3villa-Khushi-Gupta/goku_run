@@ -1,0 +1,72 @@
+#background_container video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    overflow: -moz-hidden-unscrollable;
+} 
+#background_container {
+    position: relative;
+  }
+  
+  #video-heading {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(231, 231, 17);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Calibri', monospace;
+  }
+  
+#character{
+    position: absolute;
+    bottom: 0px;
+    left: 150px;
+}
+#villan{
+    position: absolute;
+    bottom: 0px;
+    left: 1800px;
+    animation: move_villan 1.5s infinite;
+}
+.villan-animation {
+    animation: move_villan 3s infinite;
+  }
+
+  @keyframes move_villan {
+      0%{right: 0px;}      
+      100%{left: -75px;}
+  }
+
+.jump-animation {
+    animation: jump 1s infinite ;
+  }
+
+  @keyframes jump{
+    0%{bottom: 200px;}
+
+    25%{
+      bottom: 250px;
+      left: 20vh;
+    }
+    50%{
+      bottom: 300px;
+      left: 35vh;
+    }
+    75%{
+      bottom: 250px;
+      left: 20vh;
+    }
+    100%{
+      bottom: 200px;
+      left: 20vh;
+    }  
+}   
+  
+  
+  
+  
+  
